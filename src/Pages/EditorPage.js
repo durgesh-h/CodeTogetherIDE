@@ -6,6 +6,7 @@ import Editor from "../components/Editor";
 import { initSocket } from "../socket";
 import toast from 'react-hot-toast';
 import ACTIONS from "../Action";
+import code from '../../public/Codetog.png'
 import { useParams,useLocation,useNavigate,Navigate} from "react-router-dom";
 
 const EditorPage = () => {
@@ -150,7 +151,7 @@ function leaveRoom() {
         <div className="aside">
           <div className="aside-inner">
             <div className="logo">
-              <img className="logoImage" src="/codetog.png" alt="logo" />
+              <img className="logoImage" src={code} alt="logo" />
             </div>
             <div id="type"></div>
             <h3>Connected</h3>

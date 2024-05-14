@@ -4,7 +4,7 @@ import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Preloader from "../components/Preloader";
-
+import code from '../../public/Codetog.png'
 const HomePage = () => {
   const navigate = useNavigate();
   const [Loading, setLoading] = useState(true);
@@ -53,7 +53,7 @@ const HomePage = () => {
     return (
       <div className="HomePageWrapper">
         <div className="FormWrapper">
-          <img src="/public/codetog.png" alt="CodeImage" className="HomePageLogo" />
+          <img src={code} alt="CodeImage" className="HomePageLogo" />
           <h4 className="MainLabel">Paste Invitation Room Id</h4>
 
           <div className="InputGroup">
